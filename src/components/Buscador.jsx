@@ -1,5 +1,12 @@
 const Buscador = () => {
-  return;
+  return (
+    <>
+    
+    
+    {console.log("hola mundo :D")}
+    </>
+  )
+
 };
 
 export default Buscador;
