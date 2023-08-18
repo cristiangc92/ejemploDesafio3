@@ -26,19 +26,6 @@ function App() {
     setSearch(e.target.value);
   };
 
-  const filteredColaboradores = colaboradores.filter((c) => {
-    if (
-      c.nombre.toLowerCase().includes(search.toLowerCase()) ||
-      c.correo.toLowerCase().includes(search.toLowerCase()) ||
-      c.edad.toLowerCase().includes(search.toLowerCase()) ||
-      c.cargo.toLowerCase().includes(search.toLowerCase()) ||
-      c.telefono.toLowerCase().includes(search.toLowerCase())
-    ) {
-      return true;
-    }
-    return false;
-  });
-
   return (
     <>
       <div className="mx-4">
